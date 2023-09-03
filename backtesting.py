@@ -1,7 +1,7 @@
 import pandas as pd
 import pymysql
 
-conn = pymysql.connect(host='127.0.0.1', user='root', password='Quantum45**', db='INVESTAR', charset='utf8')
+conn = pymysql.connect(host='127.0.0.1', user='root', password='password', db='INVESTAR', charset='utf8')
 sql = "SELECT code, date, open, high, low, close, volume FROM daily_price"
 original_df = pd.read_sql(sql, conn)
 codes = pd.read_excel('real_codes.xlsx')
