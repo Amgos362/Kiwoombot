@@ -3,7 +3,7 @@ import pymysql
 from datetime import timedelta
 import matplotlib.pyplot as plt
 
-conn = pymysql.connect(host='127.0.0.1', user='root', password='Quantum45**', db='INVESTAR', charset='utf8')
+conn = pymysql.connect(host='127.0.0.1', user='root', password='password', db='INVESTAR', charset='utf8')
 sql = "SELECT code, date, open, high, low, close, volume FROM daily_price"
 df = pd.read_sql(sql, conn)
 
