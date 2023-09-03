@@ -34,7 +34,7 @@ def remove_specific_words(df, words):
     return df
 
 driver = webdriver.Chrome()
-conn = pymysql.connect(host='127.0.0.1', user='root', password='Quantum45**', db='INVESTAR', charset='utf8')
+conn = pymysql.connect(host='127.0.0.1', user='root', password='password', db='INVESTAR', charset='utf8')
 sql = "SELECT code, name, total FROM company_info"
 df_total = pd.read_sql(sql, conn)
 sql = "SELECT code, date, close FROM daily_price"
