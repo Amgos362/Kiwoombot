@@ -123,7 +123,7 @@ if __name__ == "__main__":
         # 일단 기본 시작 날짜로 설정
         now = datetime.now()
         # start_date = now.strftime('%Y%m%d')
-        start_date = "20240323" # 추가해야하는 날짜 기입, 다음은 20240718.
+        start_date = "20240717" # 당일날 기입. 오늘을 기점으로 과거로 돌아가면서 없는 데이터를 추가하는 방향.
 
         # 해당 코드와 시작 날짜에 대한 데이터가 이미 있는지 확인
         if kiwoom.check_data_exists(code, start_date):
